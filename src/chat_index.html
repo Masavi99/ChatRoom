@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/style.css">
+  <title>ChatRoom Project</title>
+</head>
+
+<body class="bg-green-50 flex justify-center item-center h-screen">
+  <div class="bg-gray-50 p-6 rounded-lg shadow-lg w-full max-w-2xl">
+    <div id="chatbox" class="h-44 p-4 mb-4 bg-green-50 rounded-lg overflow-y-scroll border border-gray-400">
+    </div>
+
+    <!-- input username and Text messages for Chatbox-->
+    <input id="userName" type="text" placeholder="Enter Valid Username" class="w-full mb-2 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400" />
+    <div class="flex">
+      <input id="userMessage" type="text" placeholder="Enter Message" class="flex-grow p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400" />
+      <!-- send Button -->
+      <button onclick="sendMessage()" class="ml-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Send</button>
+    </div>
+
+  </div>
+
+</body>
+
+<script src="/assets/chat.js">
+</script>
+
+</html>
